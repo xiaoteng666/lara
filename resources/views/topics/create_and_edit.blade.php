@@ -60,7 +60,7 @@
 
 @endsection
 
-@section('scripts')
+ @section('scripts')
     <script type="text/javascript"  src="{{ asset('js/module.min.js') }}"></script>
     <script type="text/javascript"  src="{{ asset('js/hotkeys.min.js') }}"></script>
     <script type="text/javascript"  src="{{ asset('js/uploader.min.js') }}"></script>
