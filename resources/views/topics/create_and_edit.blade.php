@@ -41,7 +41,7 @@
                             <option value="" hidden disabled selected>请选择分类</option>
                             @foreach ($categories as $value)
                                 <option value="{{ $value->id }}" 
-                                    @if($topic->category_id == $value->id) selected="selected"> @endif {{ $value->name }}</option>
+                                    @if($topic->category_id == $value->id) selected="selected" @endif> {{ $value->name }}</option>
                             @endforeach
                         </select>
                     </div>
