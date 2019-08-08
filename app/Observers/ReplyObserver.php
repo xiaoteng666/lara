@@ -26,4 +26,9 @@ class ReplyObserver
     {
         //
     }
+    public function deleted(Reply $reply)
+    {
+           //删除后自动执行的操作
+           $reply->topic->decrement('reply_count',1);
+    }
 }
