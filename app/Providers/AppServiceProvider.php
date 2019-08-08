@@ -27,7 +27,10 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function register()
-    {
-        //
+    {    
+        //判断是本地才引入sudo-su，在线上就不引入
+        if(app()->isLocal()){
+           $this->app->register(\VIACreative\SudoSu\ServiceProvider::class);   
+        }
     }
 }
