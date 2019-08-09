@@ -34,13 +34,18 @@ return array(
      *      'E-Commerce' => ['collections', 'products', 'product_images', 'orders'],
      *      'Settings'  => ['settings.site', 'settings.ecommerce', 'settings.social'],
      *      'Analytics' => ['E-Commerce' => 'page.pages.analytics'],
-     *  ]
+     *  ]   
      */
     'menu' => [
         '用户与权限' => [
             'users',
             'roles',
             'permissions',
+        ],
+        '内容管理' => [
+            'categories',
+            'topics',
+            'replies',
         ],
     ],
 
